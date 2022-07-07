@@ -1,0 +1,394 @@
+@media (min-width: 768px) {
+	html {
+		scroll-padding-top: 6rem;
+	}
+
+	//header
+	.header {
+		background-image: url(../img/hero-img-large-2.jpg);
+		background-position-y: center;
+	}
+	.hamburger {
+		display: none;
+	}
+	//nav
+	.nav {
+		&-desctop {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 6rem;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			background-color: $menu-dark;
+			color: $white;
+			z-index: 900;
+		}
+		&-mobile {
+			display: none;
+		}
+		&__item {
+			margin: 0 0;
+			padding: 1.1rem 2rem 1.1rem 0.2rem;
+			font-size: 1.8rem;
+			color: $white;
+			text-align: center;
+			justify-content: center;
+			letter-spacing: -0.08rem;
+			border-left: 0.3rem solid transparent;
+			transition: border-left 0.6s;
+
+			&:hover {
+				color: $white;
+				border-left: 0.3rem solid $darkred;
+			}
+			&:first-child {
+				margin-top: 0rem;
+				margin-left: 1.4rem;
+			}
+		}
+	}
+	//header
+	.header {
+		letter-spacing: 0.3rem;
+
+		&__heading {
+			font-size: 8rem;
+		}
+		&__text {
+			margin-top: -2rem;
+			font-size: 2.4rem;
+		}
+	}
+	.aboutme-stage2 {
+		.wrapper {
+			flex-direction: row;
+		}
+		&__img {
+			display: block;
+			width: 48%;
+			background-image: url('../img/wo-am-i-pt2-large.jpg');
+			background-size: cover;
+			background-position: center;
+			border-radius: 8px;
+		}
+
+		&__hello {
+			display: flex;
+			width: 52%;
+			padding-left: 2rem;
+		}
+		&__label {
+			width: 100%;
+			margin: 1rem 0;
+			padding: 1rem;
+		}
+	}
+	.albums {
+		.wrapper {
+			justify-content: space-around;
+		}
+		&__album {
+			width: 45vw;
+			height: 45vw;
+		}
+		.songs-list {
+			display: none;
+		}
+		.isactive {
+			display: block;
+		}
+	}
+
+	.modal {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80vw;
+		height: 66vh;
+		background-color: #dff6ff;
+		border-radius: 8px;
+		color: #000;
+		z-index: 1000;
+		overflow: hidden;
+
+		&__album-name {
+			width: 100%;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			color: #06283d;
+			text-align: center;
+			font-size: 4rem;
+		}
+		&__album-cover {
+			position: absolute;
+			left: -6%;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 250px;
+			height: 250px;
+			background-image: url('../img/Cover-1.jpg');
+			background-size: contain;
+
+			border-radius: 50%;
+			overflow: hidden;
+			z-index: 3;
+
+			&--bg1 {
+				position: absolute;
+				left: 1%;
+				top: 45%;
+				transform: translateY(-50%);
+				width: 220px;
+				height: 220px;
+				border-radius: 50%;
+				background-color: #47b5ff;
+				z-index: 1;
+			}
+			&--bg2 {
+				position: absolute;
+				left: 1%;
+				top: 55%;
+				transform: translateY(-50%);
+				width: 220px;
+				height: 220px;
+				border-radius: 50%;
+				background-color: #1363df;
+				z-index: 2;
+			}
+		}
+
+		&__songs-list {
+			position: absolute;
+			right: 0;
+			top: 15%;
+			width: 60%;
+		}
+	}
+
+	.mod-player {
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.5rem 1rem;
+		margin-bottom: 2rem;
+		font-size: 1.8rem;
+		&__icon {
+			width: 200%;
+		}
+		&__red-line {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			margin-left: -1rem;
+			background-color: $darkred;
+			border-radius: 25%;
+		}
+	}
+	.mod-song {
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 1rem 1rem;
+		margin: 1rem 0;
+		font-size: 1.8rem;
+		&__icons {
+			position: absolute;
+			right: 0;
+			margin-right: 1rem;
+			display: flex;
+		}
+		&__icon {
+			padding: 0.5rem;
+		}
+		&__name {
+			margin-left: 1rem;
+		}
+
+		&__border-line {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			height: 1px;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 25%;
+		}
+	}
+	.modal__bg {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 999;
+	}
+	.instruments {
+		display: block;
+		.wrapper {
+			position: relative;
+			min-height: 30vh;
+			display: flex;
+			justify-content: space-around;
+			padding-top: 8rem;
+			padding-bottom: 1rem;
+			margin-bottom: 2rem;
+		}
+	}
+	.instrument {
+		width: 25%;
+		padding-top: 13.5%;
+		background: green;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 8px;
+
+		&--bg1 {
+			background-image: url('../img/keyboard.jpg');
+		}
+		&--bg2 {
+			background-image: url('../img/percussion.jpg');
+		}
+		&--bg3 {
+			background-image: url('../img/guitar.jpg');
+		}
+	}
+	.slider-mobile {
+		display: none;
+	}
+	.slider-desctp {
+		display: block;
+		position: relative;
+		width: 90%;
+		height: auto;
+		margin: 8rem auto 2rem;
+
+		&__bg {
+			width: 25%;
+			height: 20vh;
+			background-size: cover;
+			background-position: center center;
+			border-radius: 50%;
+			margin: 1rem 1rem;
+			box-shadow: 5px 5px 10px black;
+			transition: transform 2s;
+
+			&--1 {
+				background-image: url('../img/musician1-l.jpg');
+			}
+			&--2 {
+				background-image: url('../img/musician2-l.jpg');
+			}
+			&--3 {
+				background-image: url('../img/musician3-l.jpg');
+			}
+			&--4 {
+				background-image: url('../img/musician4-l.jpg');
+			}
+			&--5 {
+				background-image: url('../img/musician5-l.jpg');
+			}
+		}
+	}
+	.slick-center {
+		transform: scale(1.2);
+	}
+	.contact {
+		&__form {
+			justify-content: space-between;
+		}
+		&__form-box {
+			width: 49%;
+			flex-direction: column;
+		}
+		&__btn {
+			padding: 1.2rem 6rem;
+			font-size: 1.8rem;
+		}
+	}
+	.footer {
+		width: 100%;
+		min-height: 150px;
+		padding: 2rem;
+		background-color: $menu-dark;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1.8rem;
+
+		&__column-left {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			div:last-child {
+				display: none;
+			}
+		}
+		&__logo {
+			width: 25%;
+			padding-top: 11.25%;
+			margin-bottom: 0;
+			background-image: url('../img/nieszka.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			border-radius: 25px;
+			background-position: center center;
+		}
+		&__socials {
+			a {
+				padding: 0.5rem;
+				margin-right: 0.5rem;
+			}
+			margin-bottom: 1rem;
+		}
+		&__socials-heading {
+			margin-bottom: 1rem;
+		}
+		&__underline {
+			width: 80%;
+			height: 1px;
+			margin-bottom: 1rem;
+			background-color: #fff;
+		}
+		&__contact {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p {
+				margin-bottom: 1rem;
+			}
+			span {
+				color: $darkred;
+			}
+		}
+		&__menu {
+			width: 25%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1.2rem;
+
+			a {
+				padding: 0.5rem;
+				margin-bottom: 0.3rem;
+				text-decoration: none;
+				color: #fff;
+			}
+			a:hover {
+				border: 1px solid $darkred;
+				transform: scale(1.2);
+			}
+		}
+	}
+}

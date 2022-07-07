@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgNieszka</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__hamburger hamburger hamburger--collapse " type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav class="nav nav-mobile">
+            <a class="nav__item" href="#"><img src="./img/icons/home.svg" alt="" class="nav__icon"> Home</a>
+            <a class="nav__item" href="#aboutme"><img src="./img/icons/user.svg" alt="" class="nav__icon"> aboutme</a>
+            <a class="nav__item" href="#albums"><img src="./img/icons/disc.svg" alt="" class="nav__icon"> albums</a>
+
+            <a class="nav__item" href="#cooperation"><img src="./img/icons/users.svg" alt="" class="nav__icon">
+                cooperations</a>
+            <a class="nav__item" href="#contact"><img src="./img/icons/send.svg" alt="" class="nav__icon"> contact</a>
+        </nav>
+        <nav class="nav nav-desctop">
+            <a class="nav__item" href="#">Home</a>
+            <a class="nav__item" href="#aboutme">aboutme</a>
+            <a class="nav__item" href="#albums">albums</a>
+            <a class="nav__item" href="#instruments">instruments</a>
+            <a class="nav__item" href="#cooperation">cooperation</a>
+            <a class="nav__item" href="#contact">contact</a>
+        </nav>
+        <div class="header__heading"><span class="text-ornament">Ni</span>eshka</div>
+        <div class="header__text">
+            <p>Professional Singer</p>
+        </div>
+        <a href="#aboutme" class="header__btn"><img src="./img/icons/arrow-down.svg" alt=""
+                class="header__btn-arrow"></a>
+
+        <div class="header__bg"></div>
+
+
+    </header>
+    <main>
+        <section class="aboutme" id="aboutme">
+            <div class="wrapper">
+
+                <div class="aboutme__img">
+                    <div class="photo-overlay"></div>
+                </div>
+
+                <div class="aboutme__hello">
+                    <h2 class="aboutme__heading"><span class="text-ornament">H</span>ello</h2>
+                    <div class="aboutme__red-mdash"></div>
+                    <h2 class="aboutme__heading-text">
+                        I am Agnieszka a
+                        proffesional singer
+                    </h2>
+                    <div class="aboutme__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus sed reiciendis dolorum,
+                            suscipit voluptatem sequi? In, sunt? Commodi molestiae suscipit, quis doloremque
+                            perspiciatis
+                            distinctio totam. Voluptas voluptates quam praesentium blanditiis et perferendis commodi
+                            voluptatibus, totam sapiente ullam nam qui aspernatur ab, libero atque, ut magni. Officiis,
+                            aspernatur placeat!</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutme-stage2">
+            <div class="wrapper">
+                <div class="aboutme-stage2__img">
+                    <div class="photo-overlay"></div>
+                </div>
+
+                <div class="aboutme-stage2__hello">
+                    <div class="aboutme-stage2__red-mdash"></div>
+                    <h2 class="aboutme-stage2__heading-text">
+                        Who am I?
+                    </h2>
+                    <div class="aboutme-stage2__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus sed reiciendis dolorum,
+                            suscipit voluptatem sequi? In, sunt? Commodi molestiae suscipit, quis doloremque
+                            perspiciatis
+                            distinctio totam. Voluptas voluptates quam praesentium blanditiis et perferendis commodi
+                            voluptatibus, totam sapiente ullam nam qui aspernatur ab, libero atque, ut magni. Officiis,
+                            aspernatur placeat!</p>
+
+                    </div>
+                    <div class="aboutme-stage2__labels">
+                        <div class=" aboutme-stage2__label">
+                            <p class="aboutme-stage2__label-name">Imę:</p>
+                            <p>Agnieszka</p>
+                        </div>
+                        <div class="aboutme-stage2__label">
+                            <p class="aboutme-stage2__label-name">Email:</p>
+                            <p>agnieszka.singer@gmai.com</p>
+                        </div>
+                        <div class="aboutme-stage2__label">
+                            <p class="aboutme-stage2__label-name">Adres:</p>
+                            <p>66-552 Poznań</p>
+                        </div>
+                        <div class="aboutme-stage2__label">
+                            <p class="aboutme-stage2__label-name">Tel:</p>
+                            <p>+48900-800-700</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- sekcja albumy zmiana nazewnicstwa klas BEM od komponentu listy utworów-->
+        <section class="albums" id="albums">
+            <div class="wrapper">
+                <!-- nazwa sekscji -->
+                <h2 class="albums__heading"><span class="albums__heading-ornament">A</span>lbums</h2>
+                <div class="album">
+                    <!-- okładka albumu -->
+                    <div class="albums__album albums__album--one">
+                        <p class="albums__album-title">ceover 1</p>
+                        <div class="albums__album-overlay"></div>
+                    </div>
+                    <!-- lista utworów -->
+                    <div class="songs-list">
+                        <!-- blok player -->
+                        <div class="player">
+                            <a class="player__palay-btn"><img src="./img/icons/play-circle.svg" alt=""
+                                    class="player__icon"></a>
+                            <div class="player__song-name"> Be Happy!!!</div>
+                            <div class="player__song-time">2:00/3:45</div>
+                            <!-- linia oddzielajaca player od listy utworów -->
+                            <div class="player__red-line"></div>
+                        </div>
+                        <!-- blok z listą piosenek -->
+                        <div class="song">
+                            <div class="song__number">1.</div>
+                            <div class="song__name">Be Happy!!!</div>
+                            <div class="song__download-sample"><img src="./img/icons/play-circle.svg" alt=""
+                                    class="song__icon"><img src="./img/icons/download.svg" alt="" class="song__icon">
+                            </div>
+                            <div class="song__border-line"></div>
+                        </div>
+                        <div class="song">
+                            <div class="song__number">2.</div>
+                            <div class="song__name">Don't worry be Happy!!!</div>
+                            <div class="song__download-sample"><img src="./img/icons/play-circle.svg" alt=""
+                                    class="song__icon"><img src="./img/icons/download.svg" alt="" class="song__icon">
+                            </div>
+                            <div class="song__border-line"></div>
+                        </div>
+                        <div class="song">
+                            <div class="song__number">3.</div>
+                            <div class="song__name">Be Happy!!!</div>
+                            <div class="song__download-sample"><img src="./img/icons/play-circle.svg" alt=""
+                                    class="song__icon"><img src="./img/icons/download.svg" alt="" class="song__icon">
+                            </div>
+                            <div class="song__border-line"></div>
+                        </div>
+                        <div class="song">
+                            <div class="song__number">3.</div>
+                            <div class="song__name">Be Happy!!!</div>
+                            <div class="song__download-sample"><img src="./img/icons/play-circle.svg" alt=""
+                                    class="song__icon"><img src="./img/icons/download.svg" alt="" class="song__icon">
+                            </div>
+                            <div class="song__border-line"></div>
+                        </div>
+                        <div class="song">
+                            <div class="song__number">3.</div>
+                            <div class="song__name">Be Happy!!!</div>
+                            <div class="song__download-sample"><img src="./img/icons/play-circle.svg" alt=""
+                                    class="song__icon"><img src="./img/icons/download.svg" alt="" class="song__icon">
+                            </div>
+                            <div class="song__border-line"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- okładka albumu -->
+                <div class="albums__album albums__album--two">
+                    <p class="albums__album-title">ceover 2</p>
+                    <div class="albums__album-overlay"></div>
+                </div>
+
+                <div class="modal">
+                    <!-- dodać klase isactive alby wyświetlić-->
+                    <h2 class="modal__album-name">Album 1</h2>
+                    <div class="modal__album-cover"></div>
+                    <div class="modal__album-cover--bg1"></div>
+                    <div class="modal__album-cover--bg2"></div>
+                    <div class="modal__songs-list">
+                        <div class="mod-player">
+                            <a class="mod-player__palay-btn"><img src="./img/icons/play-circle.svg" alt=""
+                                    class="mod-player__icon"></a>
+                            <div class="mod-player__song-name"> Be Happy!!!</div>
+                            <div class="mod-player__song-time">2:00/3:45</div>
+                            <!-- linia oddzielajaca player od listy utworów -->
+                            <div class="mod-player__red-line"></div>
+                        </div>
+
+                        <div class="mod-song">
+                            <div class="mod-song__number">1.</div>
+                            <div class="mod-song__name">Be Happy!!!</div>
+                            <div class="mod-song__icons">
+                                <div class="play"><img src="./img/icons/play-circle.svg" alt="" class="mod-song__icon">
+                                </div>
+                                <div class="download-sample"><img src="./img/icons/download.svg" alt=""
+                                        class="mod-song__icon">
+                                </div>
+                            </div>
+                            <div class="mod-song__border-line"></div>
+                        </div>
+                        <div class="mod-song">
+                            <div class="mod-song__number">1.</div>
+                            <div class="mod-song__name">Be Happy!!!</div>
+                            <div class="mod-song__icons">
+                                <div class="play"><img src="./img/icons/play-circle.svg" alt="" class="mod-song__icon">
+                                </div>
+                                <div class="download-sample"><img src="./img/icons/download.svg" alt=""
+                                        class="mod-song__icon">
+                                </div>
+                            </div>
+                            <div class="mod-song__border-line"></div>
+                        </div>
+                        <div class="mod-song">
+                            <div class="mod-song__number">1.</div>
+                            <div class="mod-song__name">Be Happy!!!</div>
+                            <div class="mod-song__icons">
+                                <div class="play"><img src="./img/icons/play-circle.svg" alt="" class="mod-song__icon">
+                                </div>
+                                <div class="download-sample"><img src="./img/icons/download.svg" alt=""
+                                        class="mod-song__icon">
+                                </div>
+                            </div>
+                            <div class="mod-song__border-line"></div>
+                        </div>
+                        <div class="mod-song">
+                            <div class="mod-song__number">1.</div>
+                            <div class="mod-song__name">Be Happy!!!</div>
+                            <div class="mod-song__icons">
+                                <div class="play"><img src="./img/icons/play-circle.svg" alt="" class="mod-song__icon">
+                                </div>
+                                <div class="download-sample"><img src="./img/icons/download.svg" alt=""
+                                        class="mod-song__icon">
+                                </div>
+                            </div>
+                            <div class="mod-song__border-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__bg"></div><!-- dodać klase isactive alby wyświetlić-->
+            </div>
+        </section>
+        <section id="instruments" class="instruments">
+            <div class="wrapper">
+                <h2 class="section__heading"><span class="section__heading-ornament">I</span>nstruments</h2>
+                <div class="instrument instrument--bg1"></div>
+                <div class="instrument instrument--bg2"></div>
+                <div class="instrument instrument--bg3"></div>
+            </div>
+        </section>
+        <section id="cooperation" class="cooperation">
+            <div class="wrapper">
+                <h2 class="section__heading"><span class="section__heading-ornament">C</span>ooperation</h2>
+                <div class="slider-desctp">
+                    <div class="slider-desctp__bg slider-desctp__bg--1"></div>
+                    <div class="slider-desctp__bg slider-desctp__bg--2"></div>
+                    <div class="slider-desctp__bg slider-desctp__bg--3"></div>
+                    <div class="slider-desctp__bg slider-desctp__bg--4"></div>
+                    <div class="slider-desctp__bg slider-desctp__bg--5"></div>
+                </div>
+                <div class="slider-mobile">
+                    <div class="slider-mobile__bg slider-mobile__bg--1"></div>
+                    <div class="slider-mobile__bg slider-mobile__bg--2"></div>
+                    <div class="slider-mobile__bg slider-mobile__bg--3"></div>
+                    <div class="slider-mobile__bg slider-mobile__bg--4"></div>
+                    <div class="slider-mobile__bg slider-mobile__bg--5"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="wrapper">
+                <h2 class="section__heading"><span class="section__heading-ornament">C</span>ontact me</h2>
+                <form class="contact__form" action="/index.html#contact">
+                    <div class="contact__form-box">
+                        <label class="contact__label" for="name">Name & Surname:</label>
+                        <input type="text" id="name" class="contact__input">
+                    </div>
+                    <div class="contact__form-box">
+                        <label class="contact__label" for="mail">E-mail:</label>
+                        <input type="text" id="mail" class="contact__input">
+                    </div>
+                    <div class="contact__form-textarea">
+                        <label class="contact__label" for="msg">Message:</label>
+                        <textarea id="msg" cols="30" rows="10" class="contact__input"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact__btn">Send</button>
+                </form>
+            </div>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="footer__logo"></div>
+            <div class="footer__column-left">
+                <h5 class="footer__socials-heading">Znajdziesz mnie na:</h5>
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/koranelka/" target="_blank"><img src="./img/icons/facebook.svg"
+                            alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/koranelka/" target="_blank"><img src="./img/icons/instagram.svg"
+                            alt="instagram icon"></a>
+                    <a href="https://www.instagram.com/koranelka/" target="_blank"><img src="./img/icons/linkedin.svg"
+                            alt="linkedin icon"></a>
+                </div>
+                <div class="footer__underline"></div>
+                <div class="footer__contact">
+                    <p> <span>agnieszka.singer@gmai.com</span> </p>
+                    <p> +48900-800-700 </p>
+                </div>
+                <!-- <div class="light-mode-switch"></div> -->
+                <div class="footer__underline"></div>
+            </div>
+            <div class="footer__menu">
+                <a class="footer__item" href="#">Home</a>
+                <a class="footer__item" href="#aboutme">Aboutme</a>
+                <a class="footer__item" href="#albums">Albums</a>
+                <a class="footer__item" href="#instruments">Instruments</a>
+                <a class="footer__item" href="#cooperation">Cooperation</a>
+                <a class="footer__item" href="#contact">Contact</a>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider-desctp').slick({
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                pauseOnHover: true,
+                arrows: false
+            });
+            $('.slider-mobile').slick({
+                mobileFirst: true,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnHover: true,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

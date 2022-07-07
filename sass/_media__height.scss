@@ -1,0 +1,40 @@
+@media (min-height: 460px) {
+	.header {
+		&__heading {
+			margin-top: 10vh;
+		}
+		&__btn {
+			bottom: 10%;
+		}
+	}
+}
+@media (min-height: 550px) {
+	.header {
+		&__heading {
+			margin-top: 20vh;
+		}
+		&__btn {
+			bottom: 15%;
+		}
+	}
+}
+@media (min-height: 750px) {
+	.header {
+		&__heading {
+			margin-top: 30vh;
+		}
+	}
+	.instrument {
+		height: 70%;
+	}
+}
+@media (min-height: 1200px) {
+	.header {
+		&__heading {
+			margin-top: 35vh;
+		}
+	}
+	.instrument {
+		height: 50%;
+	}
+}
